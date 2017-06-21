@@ -1,0 +1,155 @@
+{
+  "hotCate": [
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 1500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "酸辣土豆丝",
+      "sales": 1100,
+      "evaluate": "96%"
+    },
+    {
+      "dishes": "农家小炒肉",
+      "sales": 805,
+      "evaluate": "95%"
+    }
+  ],
+  "saleCate": [
+    {
+      "dishes": "番茄炒鸡蛋",
+      "sales": 806,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "玉米烧排骨",
+      "sales": 760,
+      "evaluate": "95%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    }
+  ],
+  "newCate": [
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    }
+  ],
+  "rice": [
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    }
+  ],
+  "homeCookingCate": [
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    }
+  ],
+  "specialCate": [
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    }
+  ],
+  "coldCate": [
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    }
+  ],
+  "gaifan": [
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    }
+  ],
+  "soup": [
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    },
+    {
+      "dishes": "鱼香茄子煲",
+      "sales": 500,
+      "evaluate": "98%"
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <view class="pic_wrapper">
+    <image src="/images/index.jpg"></image>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="content">
+    <view class="tagline">{{tagline}}</view>
+    <!--这里怎么调整字体大小和格式-->
+    <navigator url="/pages/list/list" class="btn index_btn">马上点外卖</navigator>
   </view>
 </view>

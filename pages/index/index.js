@@ -1,15 +1,15 @@
 //index.js
 //获取应用实例
-var app = getApp()
+var app = getApp();
+var initData = "茗雪外卖只做低价味美、干净卫生的外卖"
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {}
+    tagline: initData
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  navbarTop: function(e) {
+    this.setData({
+      currentTab:e.currentTarget.dataset.idx
     })
   },
   onLoad: function () {

@@ -1,0 +1,67 @@
+<!--list.wxml-->
+<view class="container">
+  <!--头部tab切换-->
+  <view class="top-navbar">
+    <text wx:for="{{barText}}" data-idx="{{index}}" class="item {{index==currentTab ? 'active' : ''}}" bindtap="changeBar" wx:key="unique">{{item}}</text>
+  </view>
+  <!--商品列表-->
+  <view class="pro_content_box">
+    <view class="pro_wrapper" hidden="{{currentTab != 0}}">
+      <!--left-->
+      <scroll-view scroll-y class="left_col">
+        <text wx:for="{{proCategory}}" data-protit="{{item}}" class="cate-item {{index==currentTab1 ? 'active' : ''}}" data-hash="cate-{{index}}" data-idx="{{index}}" bindtap="catePro">{{item}}</text>
+      </scroll-view>
+      <!--right-->
+      <scroll-view scroll-y class="right_col" scroll-into-view="{{toView}}">
+        <block wx:for="{{datas}}" wx:for-index="idx" wx:for-item="item">
+          <view class="pro-box" id="cate-{{idx}}">
+            <text class="pro_tit">{{item.title}}</text>
+            <block wx:for="{{item.cate}}" wx:for-item="cateItem">
+              <view class="pro-item">
+                <image src="{{cateItem.img}}" class="pro-img"></image>
+                <view class="pro-detail">
+                  <view class="dishes">{{cateItem.dishes}}</view>
+                  <view class="tip">炒菜不包含米饭哦，亲亲不要忘记点哦!</view>
+                  <view class="pro-msg">
+                    <text>月售{{cateItem.sales}}</text>
+                    <text>好评率{{cateItem.evaluate}}</text>
+                  </view>
+                  <view class="pro-price">
+                    <text class="unit">￥</text>
+                    <text>{{cateItem.price}}</text>
+                  </view>
+                </view>
+                <view class="pro_tool">
+                <button type="primary" class="pro_btn decrease_btn" bindtap="addNum">-</button>
+                <text></text>
+                <button type="primary" class="pro_btn add_btn" bindtap="addNum">+</button>
+                </view>
+              </view>
+            </block>
+
+          </view>
+        </block>
+      </scroll-view>
+      <!--bottom-->
+    </view>
+    <view class="cart_box">
+      <block wx:if="{{disabled}}">
+        <view class="cart_content">
+          <view class="classname"></view>
+          <view class="classname">未选购商品</view>
+        </view>
+        <button type="primary" class="cart_btn" disabled="{{disabled}}">暂无商品</button>
+      </block>
+      <block wx:if="{{!disabled}}">
+        <view class="cart_content">
+          <view class="classname">￥<text>51</text></view>
+          <view class="classname"></view>
+        </view>
+        <button type="primary" class="cart_btn">去结算</button>
+      </block>
+    </view>
+  </view>
+
+  <!--评论-->
+  <view class="comment_wrapper" hidden="{{currentTab != 1}}">评论</view>
+</view>

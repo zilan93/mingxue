@@ -1,0 +1,155 @@
+/* list.wxss */
+.container{
+  height:100%;
+  overflow: hidden;
+  justify-content: space-between;
+}
+/**tapbar**/
+.top-navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+  height:51px;
+}
+.top-navbar .item{
+  width:50%;
+  text-align: center;
+  font-size: 15px;
+  padding:13px 0;
+  border-bottom:1px solid #F2F2F2;
+}
+.top-navbar .item.active{
+  position:relative;
+  color:#2594ff;
+}
+.top-navbar .item.active:after{
+  content: "";
+  height:2px;
+  width:100%;
+  position:absolute;
+  left:0;
+  bottom:0;
+  background: #2594ff;
+}
+/**分类**/
+.pro_content_box{
+  flex:1;
+  display: flex;
+ flex-direction: column;
+ width:100%;
+}
+.pro_wrapper{
+display: flex;
+ flex-direction: row;
+ width:100%;
+flex:1;
+}
+.left_col{
+  box-sizing: border-box;
+  width:25%;
+  flex:1;
+  height:100%;
+}
+.left_col .cate-item{
+  display: block;
+  padding:10px 8px;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  border-bottom:1px solid #e9e9e9;
+}
+.left_col .cate-item.active{
+  background-color: #fff;
+  border-left:2px solid #2594ff;
+}
+.right_col{
+  width:75%;
+  height:100%;
+}
+/*产品显示*/
+.pro-box .pro_tit{
+  display: block;
+  padding:20rpx;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  border-left:2px solid #eeeeee;
+}
+/*列表*/
+.pro-item{
+  position:relative;
+  padding:20rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #e9e9e9;
+}
+.pro-item:last-child{
+  border:none;
+}
+.pro-img{
+  float:left;
+  width:160rpx;
+  height:160rpx;
+  border-radius:6px;
+}
+.pro-detail{
+  padding-left:180rpx;
+}
+.dishes{
+  font-size:16px;
+  color:#2a2a2a;
+}
+.tip{
+  font-size:9px;
+  color:#CECECE;
+}
+.pro-msg{
+  font-size:11px;
+  color:#999;
+}
+.pro-msg text{
+  margin-right:10rpx;
+}
+.pro-price{
+  font-size:18px;
+  color:#fb5c00;
+}
+.pro-price .unit{
+  font-size: 13px;
+}
+/*添加商品按钮*/
+.pro_tool{
+  position:absolute;
+  right:20rpx;
+  bottom:20rpx;
+}
+.pro_btn{
+  width:46rpx;
+  height:46rpx;
+  line-height: 46rpx;
+  padding:0;
+  border:0;
+  border-radius: 50%;
+  background-color: #2594ff!important;
+  color:#fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.pro_btn:after{
+  content:normal;
+}
+/*购物车*/
+.cart_box{
+  display: flex;
+  align-items: center;
+  bottom:0;
+  left:0;
+  width:100%;
+  background: rgba(0,0,0,0.5);
+}
+.cart_content{
+  flex:1;
+  padding-left:30rpx;
+  color:#999;
+}
+.cart_btn{
+  border-radius: 0;
+}
