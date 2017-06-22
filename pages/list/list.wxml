@@ -32,9 +32,9 @@
                   </view>
                 </view>
                 <view class="pro_tool">
-                <button type="primary" class="pro_btn decrease_btn" bindtap="addNum">-</button>
-                <text></text>
-                <button type="primary" class="pro_btn add_btn" bindtap="addNum">+</button>
+                  <button type="primary" class="pro_btn decrease_btn" bindtap="decreaseNum" id="{{cateItem.id}}" hidden="{{!numbers[cateItem.id]}}">-</button>
+                  <text hidden="{{!numbers[cateItem.id]}}">{{numbers[cateItem.id]}}</text>
+                  <button type="primary" class="pro_btn add_btn" bindtap="addNum" id="{{cateItem.id}}">+</button>
                 </view>
               </view>
             </block>
@@ -47,14 +47,17 @@
     <view class="cart_box">
       <block wx:if="{{disabled}}">
         <view class="cart_content">
-          <view class="classname"></view>
-          <view class="classname">未选购商品</view>
+          <button class="cart_lists" disabled="{{disabled}}">cart</button>
+          <view class="cart_total">未选购商品</view>
         </view>
         <button type="primary" class="cart_btn" disabled="{{disabled}}">暂无商品</button>
       </block>
       <block wx:if="{{!disabled}}">
         <view class="cart_content">
-          <view class="classname">￥<text>51</text></view>
+          <button class="cart_lists" disabled="{{disabled}}">cart</button>
+          <view class="cart_total">￥
+            <text>{{total}}</text>
+          </view>
           <view class="classname"></view>
         </view>
         <button type="primary" class="cart_btn">去结算</button>

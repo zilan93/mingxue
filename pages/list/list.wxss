@@ -120,8 +120,13 @@ flex:1;
   position:absolute;
   right:20rpx;
   bottom:20rpx;
+  overflow:hidden;
+}
+.pro_tool text{
+  vertical-align: top;
 }
 .pro_btn{
+  display:inline-block;
   width:46rpx;
   height:46rpx;
   line-height: 46rpx;
@@ -132,6 +137,7 @@ flex:1;
   color:#fff;
   font-size: 16px;
   font-weight: bold;
+  vertical-align: top;
 }
 .pro_btn:after{
   content:normal;
@@ -147,9 +153,28 @@ flex:1;
 }
 .cart_content{
   flex:1;
+  position:relative;
   padding-left:30rpx;
   color:#999;
 }
 .cart_btn{
   border-radius: 0;
+}
+/*选择商品*/
+.cart_lists{
+  position:absolute;
+  left:30rpx;
+  top:-50rpx;
+  width:110rpx;
+  height:110rpx;
+  padding:0;
+  border-radius:50%;
+  background: #333333;
+  border:6rpx solid #444547;
+  color:#fff;
+  text-align: center;
+  line-height: 110rpx;
+}
+.cart_total{
+  padding-left:130rpx;
 }
