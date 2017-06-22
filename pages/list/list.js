@@ -15,7 +15,7 @@ Page({
     datas: Data.value,
     disabled: true,
     hide:true,
-    total:0,
+    priceAll:0,
     numbers: []
   },
   changeBar: function (e) {
@@ -38,29 +38,42 @@ Page({
   addNum: function (e) {
     var temporarilyArr = this.data.numbers;
     var id = parseInt(e.currentTarget.id);
+    var total = this.data.priceAll;
     if (temporarilyArr[id] == undefined) {
       temporarilyArr[id] = 0;
     }
     temporarilyArr[id]++;
+    total += e.currentTarget.dataset.price * 1;
     this.setData({
       hide:false,
       numbers: temporarilyArr,
-      disabled: false
+      disabled: false,
+      priceAll: total
     })
   },
   /*添加商品数量*/
   decreaseNum: function (e) {
     var temporarilyArr = this.data.numbers;
     var id = parseInt(e.currentTarget.id);
+    var total = this.data.priceAll;
     if (temporarilyArr[id] == undefined || temporarilyArr[id]<=0) {
       temporarilyArr[id] = 0;
       return;
     }
     temporarilyArr[id]--;
+    total -= e.currentTarget.dataset.price * 1;
     this.setData({
       numbers: temporarilyArr,
-      disabled: true
+      priceAll: total
     })
+    if (total == 0) {
+      this.setData({
+        disabled: true
+      })
+    }
+    /*获取商品总价*/
+    
+
   },
   /**
    * 生命周期函数--监听页面加载

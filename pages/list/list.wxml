@@ -32,9 +32,9 @@
                   </view>
                 </view>
                 <view class="pro_tool">
-                  <button type="primary" class="pro_btn decrease_btn" bindtap="decreaseNum" id="{{cateItem.id}}" hidden="{{!numbers[cateItem.id]}}">-</button>
+                  <button type="primary" class="pro_btn decrease_btn" bindtap="decreaseNum" id="{{cateItem.id}}" hidden="{{!numbers[cateItem.id]}}" data-price="{{cateItem.price}}">-</button>
                   <text hidden="{{!numbers[cateItem.id]}}">{{numbers[cateItem.id]}}</text>
-                  <button type="primary" class="pro_btn add_btn" bindtap="addNum" id="{{cateItem.id}}">+</button>
+                  <button type="primary" class="pro_btn add_btn" bindtap="addNum" id="{{cateItem.id}}" data-price="{{cateItem.price}}">+</button>
                 </view>
               </view>
             </block>
@@ -56,7 +56,7 @@
         <view class="cart_content">
           <button class="cart_lists" disabled="{{disabled}}">cart</button>
           <view class="cart_total">￥
-            <text>{{total}}</text>
+            <text>{{priceAll}}</text>
           </view>
           <view class="classname"></view>
         </view>
