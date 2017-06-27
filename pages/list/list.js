@@ -16,7 +16,7 @@ Page({
     disabled: true,
     hide:true,
     priceAll:0,
-    numbers: []
+    numbers: []//存放选中商品ID
   },
   changeBar: function (e) {
     this.setData({
@@ -51,7 +51,7 @@ Page({
       priceAll: total
     })
   },
-  /*添加商品数量*/
+  /*减少商品数量*/
   decreaseNum: function (e) {
     var temporarilyArr = this.data.numbers;
     var id = parseInt(e.currentTarget.id);
@@ -71,9 +71,6 @@ Page({
         disabled: true
       })
     }
-    /*获取商品总价*/
-    
-
   },
   /**
    * 生命周期函数--监听页面加载

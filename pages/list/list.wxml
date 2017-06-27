@@ -33,17 +33,17 @@
                 </view>
                 <view class="pro_tool">
                   <button type="primary" class="pro_btn decrease_btn" bindtap="decreaseNum" id="{{cateItem.id}}" hidden="{{!numbers[cateItem.id]}}" data-price="{{cateItem.price}}">-</button>
-                  <text hidden="{{!numbers[cateItem.id]}}">{{numbers[cateItem.id]}}</text>
+                  <text hidden="{{!numbers[cateItem.id]}}" data-title="{{cateItem.price}}">{{numbers[cateItem.id]}}</text>
                   <button type="primary" class="pro_btn add_btn" bindtap="addNum" id="{{cateItem.id}}" data-price="{{cateItem.price}}">+</button>
                 </view>
               </view>
             </block>
-
           </view>
         </block>
       </scroll-view>
       <!--bottom-->
     </view>
+    <!--购物车-->
     <view class="cart_box">
       <block wx:if="{{disabled}}">
         <view class="cart_content">
@@ -62,6 +62,12 @@
         </view>
         <button type="primary" class="cart_btn">去结算</button>
       </block>
+    </view>
+    <!--购物车遮罩-->
+    <view class="classname">
+    <view class="classname">
+
+    </view>
     </view>
   </view>
 
